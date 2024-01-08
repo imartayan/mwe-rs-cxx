@@ -3,26 +3,26 @@
 pub use cxx::UniquePtr;
 use std::fmt::Debug;
 
-#[cxx::bridge]
-mod tv32 {
-    unsafe extern "C++" {
-        include!("cbl/cxx/tiered_vec.h");
+// #[cxx::bridge]
+// mod tv32 {
+//     unsafe extern "C++" {
+//         include!("cbl/cxx/tiered_vec.h");
 
-        type TieredVec32;
-        fn new_tiered_vec_32() -> UniquePtr<TieredVec32>;
-        fn len(&self) -> usize;
-        fn is_empty(&self) -> bool;
-        fn capacity(&self) -> usize;
-        fn get(&self, idx: usize) -> u32;
-        fn update(&self, idx: usize, elem: u32) -> u32;
-        fn insert(&self, idx: usize, elem: u32);
-        fn remove(&self, idx: usize);
-        fn insert_sorted(&self, elem: u32);
-        fn contains_sorted(&self, elem: u32) -> bool;
-        fn index_sorted(&self, elem: u32) -> usize;
-    }
-}
-pub use tv32::*;
+//         type TieredVec32;
+//         fn new_tiered_vec_32() -> UniquePtr<TieredVec32>;
+//         fn len(&self) -> usize;
+//         fn is_empty(&self) -> bool;
+//         fn capacity(&self) -> usize;
+//         fn get(&self, idx: usize) -> u32;
+//         fn update(&self, idx: usize, elem: u32) -> u32;
+//         fn insert(&self, idx: usize, elem: u32);
+//         fn remove(&self, idx: usize);
+//         fn insert_sorted(&self, elem: u32);
+//         fn contains_sorted(&self, elem: u32) -> bool;
+//         fn index_sorted(&self, elem: u32) -> usize;
+//     }
+// }
+// pub use tv32::*;
 
 #[cxx::bridge]
 mod tv28 {
@@ -51,68 +51,68 @@ impl Debug for TieredVec28 {
     }
 }
 
-#[cxx::bridge]
-mod tv24 {
-    unsafe extern "C++" {
-        include!("cbl/cxx/tiered_vec.h");
+// #[cxx::bridge]
+// mod tv24 {
+//     unsafe extern "C++" {
+//         include!("cbl/cxx/tiered_vec.h");
 
-        type TieredVec24;
-        fn new_tiered_vec_24() -> UniquePtr<TieredVec24>;
-        fn len(&self) -> usize;
-        fn is_empty(&self) -> bool;
-        fn capacity(&self) -> usize;
-        fn get(&self, idx: usize) -> u32;
-        fn update(&self, idx: usize, elem: u32) -> u32;
-        fn insert(&self, idx: usize, elem: u32);
-        fn remove(&self, idx: usize);
-        fn insert_sorted(&self, elem: u32);
-        fn contains_sorted(&self, elem: u32) -> bool;
-        fn index_sorted(&self, elem: u32) -> usize;
-    }
-}
-pub use tv24::*;
+//         type TieredVec24;
+//         fn new_tiered_vec_24() -> UniquePtr<TieredVec24>;
+//         fn len(&self) -> usize;
+//         fn is_empty(&self) -> bool;
+//         fn capacity(&self) -> usize;
+//         fn get(&self, idx: usize) -> u32;
+//         fn update(&self, idx: usize, elem: u32) -> u32;
+//         fn insert(&self, idx: usize, elem: u32);
+//         fn remove(&self, idx: usize);
+//         fn insert_sorted(&self, elem: u32);
+//         fn contains_sorted(&self, elem: u32) -> bool;
+//         fn index_sorted(&self, elem: u32) -> usize;
+//     }
+// }
+// pub use tv24::*;
 
-#[cxx::bridge]
-mod tv20 {
-    unsafe extern "C++" {
-        include!("cbl/cxx/tiered_vec.h");
+// #[cxx::bridge]
+// mod tv20 {
+//     unsafe extern "C++" {
+//         include!("cbl/cxx/tiered_vec.h");
 
-        type TieredVec20;
-        fn new_tiered_vec_20() -> UniquePtr<TieredVec20>;
-        fn len(&self) -> usize;
-        fn is_empty(&self) -> bool;
-        fn capacity(&self) -> usize;
-        fn get(&self, idx: usize) -> u32;
-        fn update(&self, idx: usize, elem: u32) -> u32;
-        fn insert(&self, idx: usize, elem: u32);
-        fn remove(&self, idx: usize);
-        fn insert_sorted(&self, elem: u32);
-        fn contains_sorted(&self, elem: u32) -> bool;
-        fn index_sorted(&self, elem: u32) -> usize;
-    }
-}
-pub use tv20::*;
+//         type TieredVec20;
+//         fn new_tiered_vec_20() -> UniquePtr<TieredVec20>;
+//         fn len(&self) -> usize;
+//         fn is_empty(&self) -> bool;
+//         fn capacity(&self) -> usize;
+//         fn get(&self, idx: usize) -> u32;
+//         fn update(&self, idx: usize, elem: u32) -> u32;
+//         fn insert(&self, idx: usize, elem: u32);
+//         fn remove(&self, idx: usize);
+//         fn insert_sorted(&self, elem: u32);
+//         fn contains_sorted(&self, elem: u32) -> bool;
+//         fn index_sorted(&self, elem: u32) -> usize;
+//     }
+// }
+// pub use tv20::*;
 
-#[cxx::bridge]
-mod tv16 {
-    unsafe extern "C++" {
-        include!("cbl/cxx/tiered_vec.h");
+// #[cxx::bridge]
+// mod tv16 {
+//     unsafe extern "C++" {
+//         include!("cbl/cxx/tiered_vec.h");
 
-        type TieredVec16;
-        fn new_tiered_vec_16() -> UniquePtr<TieredVec16>;
-        fn len(&self) -> usize;
-        fn is_empty(&self) -> bool;
-        fn capacity(&self) -> usize;
-        fn get(&self, idx: usize) -> u16;
-        fn update(&self, idx: usize, elem: u16) -> u16;
-        fn insert(&self, idx: usize, elem: u16);
-        fn remove(&self, idx: usize);
-        fn insert_sorted(&self, elem: u16);
-        fn contains_sorted(&self, elem: u16) -> bool;
-        fn index_sorted(&self, elem: u16) -> usize;
-    }
-}
-pub use tv16::*;
+//         type TieredVec16;
+//         fn new_tiered_vec_16() -> UniquePtr<TieredVec16>;
+//         fn len(&self) -> usize;
+//         fn is_empty(&self) -> bool;
+//         fn capacity(&self) -> usize;
+//         fn get(&self, idx: usize) -> u16;
+//         fn update(&self, idx: usize, elem: u16) -> u16;
+//         fn insert(&self, idx: usize, elem: u16);
+//         fn remove(&self, idx: usize);
+//         fn insert_sorted(&self, elem: u16);
+//         fn contains_sorted(&self, elem: u16) -> bool;
+//         fn index_sorted(&self, elem: u16) -> usize;
+//     }
+// }
+// pub use tv16::*;
 
 // use paste::paste;
 
