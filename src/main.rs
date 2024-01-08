@@ -3,18 +3,8 @@
 // #![feature(slice_group_by)]
 // #![feature(generic_const_exprs)]
 
-// mod bit_container;
-// mod cbl;
-// mod compact_int;
-// mod container;
-// mod kmer;
-// mod necklace;
 mod rank_bv;
-// mod reads;
 mod tiered_vec;
-// mod wordset;
-
-// use cbl::*;
 
 fn main() {
     println!("Hi ffi!");
