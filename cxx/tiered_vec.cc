@@ -1,3 +1,5 @@
+#pragma once
+
 #include "tiered_vec.h"
 
 #define implTieredVec(W, T)                                                    \

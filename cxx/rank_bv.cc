@@ -1,3 +1,5 @@
+#pragma once
+
 #include "rank_bv.h"
 
 RankBV::RankBV(size_t size) : bitvect((size + 63) / 64), bv(&bitvect, size) {}
