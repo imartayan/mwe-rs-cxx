@@ -4,7 +4,7 @@ pub use rbv::*;
 #[cxx::bridge]
 mod rbv {
     unsafe extern "C++" {
-        include!("CBL/cxx/rank_bv.h");
+        include!("cbl/cxx/rank_bv.h");
 
         type RankBV;
         fn new_rank_bv(size: usize) -> UniquePtr<RankBV>;

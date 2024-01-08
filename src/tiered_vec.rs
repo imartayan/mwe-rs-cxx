@@ -6,7 +6,7 @@ use std::fmt::Debug;
 #[cxx::bridge]
 mod tv32 {
     unsafe extern "C++" {
-        include!("CBL/cxx/tiered_vec.h");
+        include!("cbl/cxx/tiered_vec.h");
 
         type TieredVec32;
         fn new_tiered_vec_32() -> UniquePtr<TieredVec32>;
@@ -27,7 +27,7 @@ pub use tv32::*;
 #[cxx::bridge]
 mod tv28 {
     unsafe extern "C++" {
-        include!("CBL/cxx/tiered_vec.h");
+        include!("cbl/cxx/tiered_vec.h");
 
         type TieredVec28;
         fn new_tiered_vec_28() -> UniquePtr<TieredVec28>;
@@ -54,7 +54,7 @@ impl Debug for TieredVec28 {
 #[cxx::bridge]
 mod tv24 {
     unsafe extern "C++" {
-        include!("CBL/cxx/tiered_vec.h");
+        include!("cbl/cxx/tiered_vec.h");
 
         type TieredVec24;
         fn new_tiered_vec_24() -> UniquePtr<TieredVec24>;
@@ -75,7 +75,7 @@ pub use tv24::*;
 #[cxx::bridge]
 mod tv20 {
     unsafe extern "C++" {
-        include!("CBL/cxx/tiered_vec.h");
+        include!("cbl/cxx/tiered_vec.h");
 
         type TieredVec20;
         fn new_tiered_vec_20() -> UniquePtr<TieredVec20>;
@@ -96,7 +96,7 @@ pub use tv20::*;
 #[cxx::bridge]
 mod tv16 {
     unsafe extern "C++" {
-        include!("CBL/cxx/tiered_vec.h");
+        include!("cbl/cxx/tiered_vec.h");
 
         type TieredVec16;
         fn new_tiered_vec_16() -> UniquePtr<TieredVec16>;
@@ -122,7 +122,7 @@ pub use tv16::*;
 //             // #[cxx::bridge]
 //             mod [<tv $size>] {
 //                 unsafe extern "C++" {
-//                     include!("CBL/cxx/tiered_vec.h");
+//                     include!("cbl/cxx/tiered_vec.h");
 
 //                     type [<TieredVec $size>];
 //                     fn [<new_tiered_vec_ $size>]() -> UniquePtr<[<TieredVec $size>]>;
