@@ -5,7 +5,7 @@ fn build_tiered_vec() {
 
     cxx_build::bridge("src/tiered_vec.rs")
         .file("cxx/tiered_vec.cc")
-        .flag_if_supported("-std=c++11")
+        .flag_if_supported("-std=c++14")
         .flag_if_supported("-Wno-unused-parameter")
         .compile("cxxbridge_tiered_vec");
 }
