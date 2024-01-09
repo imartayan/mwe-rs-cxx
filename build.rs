@@ -23,6 +23,6 @@ fn build_rank_bv() {
 
 fn main() {
     println!("cargo:rerun-if-changed=build.rs");
-    build_tiered_vec();
     build_rank_bv();
+    build_tiered_vec();
 }
