@@ -222,7 +222,7 @@ public:
 
 #define TT template <class T, class Layer>
 
-size_t ID = 0;
+size_t NODE_ID = 0;
 
 namespace Seq {
 TT struct helper {
@@ -784,8 +784,8 @@ TT Tiered<T, Layer>::Tiered() {
 template <class T, size_t width>
 Node<T, width>::Node(size_t depth) : depth(depth) {
   memset(elems, 0, sizeof(T) * width);
-  id = ID;
-  ID++;
+  id = NODE_ID;
+  NODE_ID++;
 }
 
 TT T Tiered<T, Layer>::sum(size_t from, size_t count) {
