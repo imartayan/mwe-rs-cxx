@@ -1,7 +1,4 @@
 #![allow(unused_imports)]
-// #![allow(incomplete_features)]
-// #![feature(slice_group_by)]
-// #![feature(generic_const_exprs)]
 
 mod rank_bv;
 mod tiered_vec;

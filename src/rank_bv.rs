@@ -1,5 +1,4 @@
 #![allow(dead_code)]
-#![allow(unused_imports)]
 
 pub use cxx::UniquePtr;
 pub use rbv::*;
